@@ -1,0 +1,7 @@
+Pickup Health by Quaternius
+Pickup BULLETS by Quaternius
+
+Coloca los .glb en esta carpeta. El juego busca (en orden):
+Curacion: Pickup Health.glb | Pickup_Health.glb | PickupHealing.glb | Pickup Health Pack.glb
+Balas:    Pickup Bullets.glb | Pickup_Bullets.glb | Pickup Ammo.glb | Pickup_Ammo.glb
+Si no hay archivo, se usa una esfera de color como respaldo.
