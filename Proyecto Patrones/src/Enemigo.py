@@ -20,12 +20,11 @@ class Enemigo(Entidad):
         super().__init__(
             hpMax=150,
             velBase=2.2,
-            model='assets/models/Zombie.glb',
+            model='assets/models/Zombie.obj',
             position=posicion,
             scale=self.escala_normal,
             collider='box',
             name='Zombie',
-            color=color.rgb(118, 138, 92),
             unlit=True,
         )
         self.game_manager = None

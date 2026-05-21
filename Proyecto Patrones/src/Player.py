@@ -104,7 +104,7 @@ class Player(FirstPersonController):
     def __init__(self, arma=None):
         super().__init__(
             height=2,
-            model='assets/models/Suit.gltf',
+            model='assets/models/Sui.gltf',
             collider='box'
         )
         self.model = None

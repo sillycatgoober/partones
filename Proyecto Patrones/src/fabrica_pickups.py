@@ -1,7 +1,3 @@
-"""
-Patrón Factory: creadores concretos instancian pickups (curación / munición)
-cuando un zombie muere, según probabilidades configurables.
-"""
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
@@ -35,7 +31,6 @@ def _primera_ruta_existente(candidatos: tuple[str, ...]) -> str | None:
 
 
 class CreadorPickup(ABC):
-    """Factory Method: cada subclase sabe cómo construir su pickup."""
 
     radio_recogida: float = 1.45
 
@@ -86,10 +81,6 @@ class CreadorPickupMunicion(CreadorPickup):
 
 
 class FabricaLootZombie:
-    """
-    Fábrica que orquesta los creadores: aplica probabilidades independientes
-    para que aparezcan 0, 1 o 2 pickups al morir un enemigo.
-    """
 
     def __init__(self, jugador, probabilidad_curacion: float = 0.22, probabilidad_municion: float = 0.32):
         self.jugador = jugador

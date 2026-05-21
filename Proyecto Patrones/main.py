@@ -14,7 +14,30 @@ juego_iniciado = False
 def _crear_escenario_base():
     Sky(texture='assets/textures/cielito.png')
     Entity(model='plane', scale=100, texture='assets/textures/Pasto.jpeg', collider='box')
-
+    Entity(model='assets/models/bell_tower.obj',texture='wall_wood_trimsheet',scale=(3, 6, 3),position=(6, 0, 0), collider='box')
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(-50,0,-20), scale=0.50 )
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(40,-4,47), scale=0.25 )
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(40,-4,30), scale=0.15 )
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(-50,-5,50), scale=0.35)
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(-50,-4,0), scale=0.25)
+    Entity(model='assets/models/rocamuro.obj', collider='mesh', texture='assets/textures/piedra', position=(50,-10,-50), scale=0.45)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(0,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(20,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-20,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(5,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-5,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-10,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(10,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(15,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-15,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(25,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-25,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(30,0,45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-30,0,45), scale= 3)
+    Entity(model='assets/models/Sin_nombre.obj', collider='mesh', position=(-40,0,20), scale= 16, rotation=(0, 90, 0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-38,0,23), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-38,0,28), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/Campfire.obj', collider='mesh', position=(0,0.1,28), scale= 8, rotation=(0,0,0))
 
 def _iniciar_partida(modelo_arma: str, sesion_red: SesionRed | None = None) -> None:
     global juego_iniciado
@@ -59,8 +82,8 @@ def iniciar_un_jugador(modelo_arma='assets/weapons/Pistol.glb'):
 def iniciar_multijugador(es_anfitrion: bool, ip_host: str | None, modelo_arma: str) -> tuple[bool, str]:
     """
     Arranca la partida con red TCP.
-    Anfitrión: escucha en el puerto 7777 hasta que un cliente se conecte (el juego ya corre).
-    Cliente: intenta conectar a ip_host (p. ej. 127.0.0.1 o la LAN del anfitrión).
+    Anfitrión: escucha en el puerto 7777 hasta que un cliente se conecte (el juego ya corre)
+    Cliente: intenta conectar a ip_host 
     """
     global juego_iniciado
     if juego_iniciado:

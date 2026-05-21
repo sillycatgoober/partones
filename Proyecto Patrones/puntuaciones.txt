@@ -12,3 +12,14 @@
 2026-05-12 11:54:31 | puntos=1000 | bajas=10 | oleada=3
 2026-05-12 12:16:11 | puntos=0 | bajas=0 | oleada=1
 2026-05-14 12:14:56 | puntos=600 | bajas=6 | oleada=2
+2026-05-14 12:48:25 | puntos=0 | bajas=0 | oleada=1
+2026-05-14 13:12:57 | puntos=0 | bajas=0 | oleada=1
+2026-05-16 21:33:23 | puntos=200 | bajas=2 | oleada=1
+2026-05-16 21:34:23 | puntos=100 | bajas=1 | oleada=1
+2026-05-17 18:14:18 | puntos=300 | bajas=3 | oleada=2
+2026-05-17 18:20:06 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 10:38:44 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 10:41:50 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 10:56:51 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 12:02:53 | puntos=400 | bajas=4 | oleada=2
+2026-05-21 12:05:52 | puntos=2400 | bajas=24 | oleada=5
