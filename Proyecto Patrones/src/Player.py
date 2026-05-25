@@ -5,7 +5,6 @@ from time import sleep
 from ursina import Vec3, camera, clamp, color, curve, distance_xz, held_keys, raycast, time, destroy, Entity
 from ursina.prefabs.first_person_controller import FirstPersonController
 
-# 1 = arma a la derecha de la pantalla (espacio de cámara), -1 = a la izquierda
 LADO_ARMA_EN_PANTALLA = 1
 
 CONFIG_ARMAS = {
@@ -68,31 +67,31 @@ CONFIG_ARMAS = {
 
 CONFIG_VISUAL_ARMAS = {
     'Pistola': {
-        'scale': 10,
+        'scale': 1,
         'rotation': Vec3(0, 90, 3),
         'normal': Vec3(0.56, -0.46, 0.92),
         'apuntando': Vec3(0.14, -0.28, 0.78)
     },
     'Revolver': {
-        'scale': 4,
+        'scale': 1,
         'rotation': Vec3(0, 90, 4),
         'normal': Vec3(0.50, -0.50, 0.98),
         'apuntando': Vec3(0.12, -0.30, 0.80)
     },
     'Escopeta': {
-        'scale': 10,
+        'scale': 1,
         'rotation': Vec3(0, 90, 2),
         'normal': Vec3(0.62, -0.58, 1.08),
         'apuntando': Vec3(0.16, -0.36, 0.94)
     },
     'Rifle': {
-        'scale': 10,
+        'scale': 1,
         'rotation': Vec3(0, 90, 2),
         'normal': Vec3(0.60, -0.55, 1.04),
         'apuntando': Vec3(0.15, -0.32, 0.90)
     },
     'Rifle Pesado': {
-        'scale': 10,
+        'scale': 1,
         'rotation': Vec3(0, 90, 2),
         'normal': Vec3(0.64, -0.58, 1.12),
         'apuntando': Vec3(0.17, -0.36, 0.96)
@@ -104,7 +103,7 @@ class Player(FirstPersonController):
     def __init__(self, arma=None):
         super().__init__(
             height=2,
-            model='assets/models/Sui.gltf',
+            model='assets/models/Suit.gltf',
             collider='box'
         )
         self.model = None
@@ -253,13 +252,13 @@ class Player(FirstPersonController):
     def configurar_arma(self, arma):
         ruta_modelo = str(getattr(arma, 'ruta_modelo', getattr(arma, 'model', ''))).lower()
 
-        if 'assault rifle 2' in ruta_modelo:
+        if 'vandal' in ruta_modelo:
             self.nombre_arma = 'Rifle Pesado'
-        elif 'shotgun' in ruta_modelo:
+        elif 'escopeta' in ruta_modelo:
             self.nombre_arma = 'Escopeta'
-        elif 'revolver' in ruta_modelo:
+        elif 'sheriffFinal' in ruta_modelo:
             self.nombre_arma = 'Revolver'
-        elif 'rifle' in ruta_modelo:
+        elif 'phantom' in ruta_modelo:
             self.nombre_arma = 'Rifle'
         else:
             self.nombre_arma = 'Pistola'
@@ -445,6 +444,5 @@ class Player(FirstPersonController):
     def morir(self):
         self.estaVivo = False
         self.hpAct = 0
-        print("El jugador ha muerto.")
         if self.game_manager:
             self.game_manager.jugador_eliminado()

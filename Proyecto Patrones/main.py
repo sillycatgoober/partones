@@ -37,7 +37,41 @@ def _crear_escenario_base():
     Entity(model='assets/models/Sin_nombre.obj', collider='mesh', position=(-40,0,20), scale= 16, rotation=(0, 90, 0))
     Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-38,0,23), scale= 3, rotation=(0,90,0))
     Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-38,0,28), scale= 3, rotation=(0,90,0))
-    Entity(model='assets/models/Campfire.obj', collider='mesh', position=(0,0.1,28), scale= 8, rotation=(0,0,0))
+    Entity(model='assets/models/Campfire.obj', collider='mesh', position=(0,0.1,28), scale= 12, rotation=(0,0,0))
+    
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(0,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(20,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-20,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(5,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-5,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-10,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(10,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(15,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-15,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(25,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-25,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(30,0,-45), scale= 3)
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(-30,0,-45), scale= 3)
+    Entity(model='assets/models/granerin.obj', collider='mesh', position=(30,-1,40), scale= 2.5,rotation=(0,225,0))
+
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,0), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,5), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,-5), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,10), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,-10), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,-15), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,15), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,20), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,-20), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,25), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,-25), scale= 3, rotation=(0,90,0))
+    Entity(model='assets/models/SM_Fence_02.obj', collider='box', position=(50,0,30), scale= 3, rotation=(0,90,0))
+
+    Entity(model='assets/models/Cow.obj',texture='assets/textures/Cow_BaseColor.png', collider='box', position=(10,0,-30), scale= 0.3, rotation=(0,40,0))
+    Entity(model='assets/models/Cow.obj',texture='assets/textures/Cow_BaseColor.png', collider='box', position=(30,0,-30), scale= 0.3, rotation=(0,120,0))
+    Entity(model='assets/models/Cow.obj',texture='assets/textures/Cow_BaseColor.png', collider='box', position=(20,0,-10), scale= 0.3, rotation=(0,40,0))
+    Entity(model='assets/models/Cow.obj',texture='assets/textures/Cow_BaseColor.png', collider='box', position=(-10,0,15), scale= 0.3, rotation=(0,60,0))
+    Entity(model='assets/models/Cow.obj',texture='assets/textures/Cow_BaseColor.png', collider='box', position=(10,0,-30), scale= 0.3, rotation=(0,20,0))
 
 def _iniciar_partida(modelo_arma: str, sesion_red: SesionRed | None = None) -> None:
     global juego_iniciado
@@ -71,7 +105,7 @@ def _iniciar_partida(modelo_arma: str, sesion_red: SesionRed | None = None) -> N
     _crear_escenario_base()
 
 
-def iniciar_un_jugador(modelo_arma='assets/weapons/Pistol.glb'):
+def iniciar_un_jugador(modelo_arma='assets/weapons/sheriffFinal.obj'):
     global juego_iniciado
     if juego_iniciado:
         return

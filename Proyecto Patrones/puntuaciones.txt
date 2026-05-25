@@ -23,3 +23,10 @@
 2026-05-21 10:56:51 | puntos=0 | bajas=0 | oleada=1
 2026-05-21 12:02:53 | puntos=400 | bajas=4 | oleada=2
 2026-05-21 12:05:52 | puntos=2400 | bajas=24 | oleada=5
+2026-05-21 12:36:23 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 12:37:11 | puntos=100 | bajas=1 | oleada=1
+2026-05-21 12:39:20 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 12:42:51 | puntos=0 | bajas=0 | oleada=1
+2026-05-21 12:43:52 | puntos=300 | bajas=3 | oleada=2
+2026-05-22 10:49:42 | puntos=800 | bajas=8 | oleada=3
+2026-05-22 10:51:14 | puntos=1700 | bajas=17 | oleada=4

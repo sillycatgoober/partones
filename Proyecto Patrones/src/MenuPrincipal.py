@@ -81,31 +81,31 @@ class MenuPrincipal(Entity):
     ARMAS = [
         {
             'nombre': 'PISTOLA',
-            'modelo': 'assets/weapons/Pistol.glb',
+            'modelo': 'assets/weapons/classic.obj',
             'textura_menu': 'assets/textures/classic.jpeg',
-            'detalle': 'La clasica'
+            'detalle': 'The classico'
         },
         {
             'nombre': 'REVOLVER',
-            'modelo': 'assets/weapons/Revolver.glb',
+            'modelo': 'assets/weapons/sheriffFinal.obj',
             'textura_menu': 'assets/textures/sheriff.jpeg',
             'detalle': 'Una bala, por cabeza'
         },
         {
             'nombre': 'ESCOPETA',
-            'modelo': 'assets/weapons/Shotgun.glb',
+            'modelo': 'assets/weapons/escopeta.obj',
             'textura_menu': 'assets/textures/escopeta.jpeg',
             'detalle': 'Corto alcance'
         },
         {
             'nombre': 'RIFLE',
-            'modelo': 'assets/weapons/Assault Rifle.glb',
+            'modelo': 'assets/weapons/phantom.obj',
             'textura_menu': 'assets/textures/m4.jpeg',
             'detalle': 'El mas confiable'
         },
         {
             'nombre': 'RIFLE PESADO',
-            'modelo': 'assets/weapons/Assault Rifle 2.glb',
+            'modelo': 'assets/weapons/vandal.obj',
             'textura_menu': 'assets/textures/ak.jpeg',
             'detalle': 'Mas municion, mas poder, menos control'
         }
